@@ -1,5 +1,5 @@
 //
-//  ReelViews.swift
+//  ReelViews.swift (ReelView.swift)
 //  Slot Machine
 //
 //  Created by Jahaan Pardhanani on 6/20/22.

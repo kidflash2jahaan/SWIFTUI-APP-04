@@ -82,6 +82,20 @@ struct ContentView: View {
                 }
                 
                 Spacer()
+                
+                HStack {
+                    Button(action: {
+                        print("Bet 20 coins")
+                    }) {
+                        Text("20")
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.white)
+                            .font(.system(.title, design: .rounded))
+                            .padding(.vertical, 5)
+                            .frame(width: 90)
+                            .shadow(color: Color("ColorTransparentBlack"), radius: 0, x: 0, y: 3)
+                    }
+                }
             }
             .overlay(
                 Button(action: {

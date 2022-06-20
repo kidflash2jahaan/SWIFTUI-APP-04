@@ -43,6 +43,44 @@ struct ContentView: View {
                     .modifier(ScoreContainerModifier())
                 }
                 
+                VStack(alignment: .center, spacing: 0) {
+                    ZStack {
+                        ReelViews()
+                        Image("gfx-bell")
+                            .resizable()
+                            .modifier(ImageModifier())
+                    }
+                    
+                    HStack(alignment: .center, spacing: 0) {
+                        ZStack {
+                            ReelViews()
+                            Image("gfx-seven")
+                                .resizable()
+                                .modifier(ImageModifier())
+                        }
+                        
+                        Spacer()
+                        
+                        ZStack {
+                            ReelViews()
+                            Image("gfx-cherry")
+                                .resizable()
+                                .modifier(ImageModifier())
+                        }
+                    }
+                    .frame(maxWidth: 500)
+                }
+                .layoutPriority(2)
+                
+                Button(action: {
+                    print("Spin the reels")
+                }) {
+                    Image("gfx-spin")
+                        .renderingMode(.original)
+                        .resizable()
+                        .modifier(ImageModifier())
+                }
+                
                 Spacer()
             }
             .overlay(

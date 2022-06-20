@@ -22,6 +22,9 @@
 		0F516D6C285FCF0C00C05F47 /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F516D64285FCF0C00C05F47 /* spin.mp3 */; };
 		0F516D6D285FCF0C00C05F47 /* chimeup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F516D65285FCF0C00C05F47 /* chimeup.mp3 */; };
 		0F516D6E285FCF0C00C05F47 /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F516D66285FCF0C00C05F47 /* background-music.mp3 */; };
+		0FFC3C112860C616009EB7ED /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3C102860C616009EB7ED /* LogoView.swift */; };
+		0FFC3C132860C674009EB7ED /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3C122860C674009EB7ED /* Modifiers.swift */; };
+		0FFC3C152860CC3E009EB7ED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFC3C142860CC3E009EB7ED /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		0F516D64285FCF0C00C05F47 /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
 		0F516D65285FCF0C00C05F47 /* chimeup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chimeup.mp3; sourceTree = "<group>"; };
 		0F516D66285FCF0C00C05F47 /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-music.mp3"; sourceTree = "<group>"; };
+		0FFC3C102860C616009EB7ED /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		0FFC3C122860C674009EB7ED /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		0FFC3C142860CC3E009EB7ED /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				0F516D5D285FCEC600C05F47 /* ContentView.swift */,
+				0FFC3C102860C616009EB7ED /* LogoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -113,6 +120,8 @@
 		0F516D70285FCF4600C05F47 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				0FFC3C122860C674009EB7ED /* Modifiers.swift */,
+				0FFC3C142860CC3E009EB7ED /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -205,10 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FFC3C112860C616009EB7ED /* LogoView.swift in Sources */,
 				0F516D49285FCB6200C05F47 /* ViewController.swift in Sources */,
 				0F516D45285FCB6200C05F47 /* AppDelegate.swift in Sources */,
 				0F516D5E285FCEC600C05F47 /* ContentView.swift in Sources */,
+				0FFC3C132860C674009EB7ED /* Modifiers.swift in Sources */,
 				0F516D47285FCB6200C05F47 /* SceneDelegate.swift in Sources */,
+				0FFC3C152860CC3E009EB7ED /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

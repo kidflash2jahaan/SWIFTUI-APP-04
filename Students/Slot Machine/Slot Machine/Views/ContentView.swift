@@ -26,12 +26,22 @@ struct ContentView: View {
     }
     
     func checkWinning() {
-        if reels[0] == reels[1] || reels[1] == reels[2] || reels[0] == reels[2] {
-            playerWins2()
-        } else if reels[0] == reels[1] && reels[1] == reels[2] && reels[0] == reels[2] {
+        if reels[0] == reels[1] && reels[1] == reels[2] && reels[0] == reels[2] {
             playerWins3()
-        } else {
             
+            if coins > highscore {
+                newHighScore()
+            }
+            
+        } else if reels[0] == reels[1] || reels[1] == reels[2] || reels[0] == reels[2] {
+            playerWins2()
+            
+            if coins > highscore {
+                newHighScore()
+            }
+            
+        } else {
+            playerLoses()
         }
     }
     
@@ -40,11 +50,15 @@ struct ContentView: View {
     }
     
     func playerWins2() {
-        coins += betAmount * 2
+        coins += betAmount * 1
     }
     
     func newHighScore() {
         highscore = coins
+    }
+    
+    func playerLoses() {
+        coins -= betAmount
     }
     
     var body: some View {
